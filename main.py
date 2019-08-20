@@ -33,7 +33,7 @@ def data_by_month():
         csvreader = csv.reader(csvfile, delimiter=',') 
         
         # Read the header row first (skip this step if there is no header)
-        #csv_header = next(csvreader)
+        csv_header = next(csvreader)
         
         # Read each row of data after the header
         for row in csvreader:
